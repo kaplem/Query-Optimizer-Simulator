@@ -19,7 +19,7 @@ def compute_influencers(g, dg, threshold, K):
         influencers.add(max_spread_node)
     return influencers
 
-# Compute Spread using Linear Threshold
+# Compute Influence Spread using Linear Threshold
 def spread_estimate(dg, influencers, threshold, K):
     curr_active_nodes = compute_k_diffusion(dg, K,  influencers , threshold)
     active_nodes = set(influencers)
